@@ -1,0 +1,15 @@
+Patients(patient_id, name, address, email, phone_no, emergency_contact, primary_dis_id,doc_id,date_of_admission,date_of_discharge) 
+
+Doctors(doc_id,name,email,phone_no) 
+
+Diseases(primary_dis_id,name) 
+
+Pharmacy(med_id,name,price) 
+
+Billing(patient_id,amount) 
+
+Laboratory(lab_id,name,price) 
+
+Test_prescribed(patient_id,?) 
+
+Medicines_prescribed(patient_id,med_id,?) 
