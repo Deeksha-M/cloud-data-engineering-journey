@@ -42,6 +42,16 @@ values
 (2,'Shabnam',1,'shabnam@lba.com'),
 (3,'Chandini',3,'chandini@lba.com'),
 (4,'Kavya',4,'kavya@lba.com');
+
+alter table teachers add salary float;
+
+UPDATE teachers
+SET salary = CASE teacher_id
+    WHEN 2 THEN 30.2
+    WHEN 3 THEN 25.4
+    WHEN 4 THEN 33.1
+END
+WHERE teacher_id IN (2, 3, 4);
 ---------------------------------------------------
 Courses Table:
 create table courses(
